@@ -1,0 +1,127 @@
+.exams {
+  .section_heading {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+    .title {
+      font-size: 1.6rem;
+      color: $primary-color;
+      text-transform: capitalize;
+      line-height: 1.9;
+      font-weight: 600;
+    }
+    .custom_dropdown {
+      max-width: 100%;
+      position: relative;
+
+      .dropdown_input {
+        padding: 8px 15px;
+        outline: 0;
+        border: 1px solid $border_color;
+        background: $primary-gradient-color;
+        border-radius: 5px;
+        width: 100%;
+        color: $primary-color;
+        margin: 5px 0;
+        font-size: 1rem;
+        position: relative;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        list-style: none;
+        position: absolute;
+        border: 1px solid $border_color;
+        width: 100%;
+        margin: 0;
+        display: block;
+        border-radius: 4px;
+        z-index: 999;
+        background-color: #fff;
+        overflow: hidden;
+        display: none;
+
+        li:hover {
+          background: $body-bg-color;
+        }
+      }
+
+      li {
+        padding: 6px 15px;
+        font-size: 1rem;
+        color: $primary-color;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        text-transform: capitalize;
+      }
+
+      .active_dropdown {
+        display: block;
+      }
+    }
+    .custom_dropdown::after {
+      content: "\025be";
+      font-size: 1.7rem;
+      position: absolute;
+      top: 0;
+      right: 3px;
+      cursor: pointer;
+    }
+  }
+  .card_1003 {
+    margin-top: 1rem;
+    width: 100%;
+
+    .card_1003_container {
+      border-radius: 1rem;
+      background: $primary-gradient-color;
+      overflow: hidden;
+      border: 2px solid $border_color;
+      display: inline-block;
+      width: 100%;
+      padding: 1rem;
+
+      .exam_info {
+        margin: 1rem;
+
+        h3 {
+          font-size: 1rem;
+          line-height: 1.4;
+          text-transform: capitalize;
+          font-weight: 600;
+          color: $primary-color;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 0.8rem;
+          line-height: 1.5;
+          color: $primary-color;
+        }
+      }
+
+      .time {
+        span {
+          font-weight: 500;
+          font-size: 0.8rem;
+        }
+        svg {
+          width: 1.1rem;
+          height: 1.1rem;
+
+          path {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .exams {
+    .section_heading {
+      .title {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

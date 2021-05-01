@@ -1,0 +1,23 @@
+@import "sass/global-css/global";
+//------------------- components
+@import "sass/includes/components/cards";
+@import "sass/includes/components/button";
+@import "sass/includes/components/forms";
+// ------------------- Sections
+@import "sass/sections/layout";
+@import "sass/sections/progress_bar";
+@import "sass/sections/courses";
+@import "sass/sections/exams";
+@import "sass/sections/single_exam";
+@import "sass/sections/profile";
+@import "sass/sections/setting";
+@import "sass/sections/signup";
+@import "sass/sections/login";
+@import "sass/sections/notice";
+@import "sass/sections/schedule";
+@import "sass/sections/class";
+@import "sass/sections/watching_class";
+@import "sass/sections/resources";
+@import "sass/sections/result";
+@import "sass/sections/result_overall";
+@import "sass/sections/complaint_box";

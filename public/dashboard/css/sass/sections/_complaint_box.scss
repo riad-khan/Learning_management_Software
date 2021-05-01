@@ -1,0 +1,91 @@
+.complaint_box {
+  margin-top: 2.5rem;
+
+  .heading_info {
+    margin-bottom: 1.6rem;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      line-height: 1.6;
+      color: $primary-color;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: $info-color;
+      line-height: 1.6;
+    }
+  }
+
+  .tork-form-control {
+    background: $primary-gradient-color;
+    border-radius: 1rem;
+    border-color: $border_color;
+    border-width: 2px;
+    color: $info-color;
+    padding: 0.4rem 0.9rem;
+    font-family: $primany-font;
+  }
+
+  .custom_dropdown {
+    width: 100%;
+    position: relative;
+
+    .dropdown_input {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      list-style: none;
+      position: absolute;
+      border: 1px solid $border_color;
+      width: 100%;
+      margin: 0;
+      display: block;
+      z-index: 999;
+      background: $white-color;
+      overflow: hidden;
+      display: none;
+      margin-top: 0.4rem;
+      border-radius: 1rem;
+
+      li:hover {
+        background: $body-bg-color;
+      }
+    }
+
+    li {
+      padding: 6px 15px;
+      font-size: 1rem;
+      color: $primary-color;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      text-transform: capitalize;
+    }
+
+    .active_dropdown {
+      display: block;
+    }
+  }
+  .custom_dropdown::after {
+    content: "\025be";
+    font-size: 1.7rem;
+    position: absolute;
+    top: -3px;
+    right: 13px;
+    cursor: pointer;
+  }
+
+  .submit_btn {
+    text-align: right;
+
+    button {
+      font-size: 1rem;
+      padding: 0.5rem 3rem;
+    }
+  }
+}
